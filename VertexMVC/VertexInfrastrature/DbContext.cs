@@ -1,8 +1,9 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace VertexInfrastrature
 {
-    public class AppDbContext
+    public class AppDbContext :DbContext
     {
 
     }
