@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tJfqbhMCbRDH0BlPvIAec/woDPFvaMbj7o++FTQOUHCp7XkNNQ+wfKTZzJVmql0uQM6LtUjeP5O7IcpYKDE6zg==",
+  "dgSpecHash": "HmkuLs3MD15ibi+kX/7Fg1fC2artC34ODc4ETnQM87CrOAH1L0TSU8TRhJnXsaf/xDgb3oMaprVhDdL8eZoSSw==",
   "success": true,
   "projectFilePath": "/Users/mac/Projects/vertex-project/VertexMVC/VertexInfrastrature/VertexInfrastrature.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "/Users/mac/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.18/microsoft.extensions.logging.abstractions.3.1.18.nupkg.sha512",
     "/Users/mac/.nuget/packages/microsoft.extensions.options/3.1.18/microsoft.extensions.options.3.1.18.nupkg.sha512",
     "/Users/mac/.nuget/packages/microsoft.extensions.primitives/3.1.18/microsoft.extensions.primitives.3.1.18.nupkg.sha512",
+    "/Users/mac/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/mac/.nuget/packages/npgsql/4.1.9/npgsql.4.1.9.nupkg.sha512",
     "/Users/mac/.nuget/packages/npgsql.entityframeworkcore.postgresql/3.1.18/npgsql.entityframeworkcore.postgresql.3.1.18.nupkg.sha512",
     "/Users/mac/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
