@@ -2,7 +2,8 @@
 
 namespace VertexInfrastrature
 {
-    public class Class1
+    public class AppDbContext
     {
+
     }
 }

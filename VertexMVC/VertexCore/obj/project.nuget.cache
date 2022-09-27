@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2AYbY07jV+35O19dihs02obhWoKbVFiwC/euNsTLMH9u5FXqIeEuE3Z5gl3F/z+rmMu5hWcZrtylHTqQ+iH9Bw==",
+  "dgSpecHash": "hRv9L+g1+aVeUx7Dz87vmtD6zAywXX92oeWZ+RrGuS65q8JPnbeCgeMuvCPO9UUy5yYNwb+udVKQC0hmNhQwKQ==",
   "success": true,
   "projectFilePath": "/Users/mac/Projects/vertex-project/VertexMVC/VertexCore/VertexCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
