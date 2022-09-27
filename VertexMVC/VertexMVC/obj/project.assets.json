@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "VertexCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/VertexCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VertexCore.dll": {}
+        }
+      },
+      "VertexInfrastrature/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "VertexCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VertexInfrastrature.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VertexInfrastrature.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VertexCore/1.0.0": {
+      "type": "project",
+      "path": "../VertexCore/VertexCore.csproj",
+      "msbuildProject": "../VertexCore/VertexCore.csproj"
+    },
+    "VertexInfrastrature/1.0.0": {
+      "type": "project",
+      "path": "../VertexInfrastrature/VertexInfrastrature.csproj",
+      "msbuildProject": "../VertexInfrastrature/VertexInfrastrature.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "VertexInfrastrature >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/mac/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/VertexMVC.csproj",
+      "projectName": "VertexMVC",
+      "projectPath": "/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/VertexMVC.csproj",
+      "packagesPath": "/Users/mac/.nuget/packages/",
+      "outputPath": "/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/mac/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/Users/mac/Projects/vertex-project/VertexMVC/VertexInfrastrature/VertexInfrastrature.csproj": {
+              "projectPath": "/Users/mac/Projects/vertex-project/VertexMVC/VertexInfrastrature/VertexInfrastrature.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
