@@ -1,35 +1,35 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
-  <MonoDevelop.Ide.ItemProperties.VertexTest FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Extensions/ConnectionConfiguration.cs">
     <Files>
-      <File FileName="VertexInfrastrature/DbContext.cs" Line="11" Column="1" />
-      <File FileName="VertexCore/Models/User.cs" Line="15" Column="40" />
-      <File FileName="VertexMVC/appsettings.json" Line="14" Column="1" />
+      <File FileName="VertexInfrastrature/DbContext.cs" Line="12" Column="1" />
+      <File FileName="VertexMVC/Program.cs" Line="26" Column="20" />
+      <File FileName="VertexMVC/Extensions/ConfigurationSetupExtension.cs" Line="18" Column="29" />
+      <File FileName="VertexMVC/Startup.cs" Line="28" Column="1" />
+      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="29" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
-            <Node name="VertexCore" expanded="True">
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="VertexCore" expanded="True" />
             <Node name="VertexInfrastrature" expanded="True" />
             <Node name="VertexMVC" expanded="True">
-              <Node name="Extensions" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Extensions" expanded="True">
+                <Node name="ConnectionConfiguration.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.VertexInfrastrature FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.VertexCore FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.VertexMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/Startup.cs" relfile="VertexMVC/Startup.cs" line="28" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
