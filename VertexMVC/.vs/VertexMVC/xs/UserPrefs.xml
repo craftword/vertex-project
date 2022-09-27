@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Extensions/ConfigurationSetupExtension.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Extensions/ConnectionConfiguration.cs">
     <Files>
       <File FileName="VertexInfrastrature/DbContext.cs" Line="11" Column="1" />
       <File FileName="VertexCore/Models/User.cs" Line="17" Column="48" />
-      <File FileName="VertexMVC/Extensions/ConfigurationSetupExtension.cs" Line="6" Column="8" />
+      <File FileName="VertexMVC/Extensions/ConfigurationSetupExtension.cs" Line="17" Column="46" />
+      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +17,7 @@
             <Node name="VertexInfrastrature" expanded="True" />
             <Node name="VertexMVC" expanded="True">
               <Node name="Extensions" expanded="True">
-                <Node name="ConfigurationSetupExtension.cs" selected="True" />
+                <Node name="ConnectionConfiguration.cs" selected="True" />
               </Node>
             </Node>
           </Node>
