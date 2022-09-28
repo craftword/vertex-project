@@ -11,8 +11,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Extensions\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Serilog.AspNetCore" />
+    <None Remove="Serilog.Sinks.Datadog.Logs" />
+    <None Remove="Serilog.Sinks.PostgreSQL" />
+    <None Remove="Serilog.Sinks.PostgreSQL.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.18">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.PostgreSQL" Version="2.3.0" />
+    <PackageReference Include="Serilog.Sinks.PostgreSQL.Configuration" Version="1.0.1" />
   </ItemGroup>
 </Project>

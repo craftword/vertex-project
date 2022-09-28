@@ -4,9 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
+using Serilog.Core;
+using VertexInfrastrature;
 using VertexMVC.Extensions;
 
 namespace VertexMVC
@@ -27,10 +31,13 @@ namespace VertexMVC
         {
             services.AddDbContextAndConfigurations(Environment, Configuration);
             services.AddControllersWithViews();
+
+            // Serilog with DataDog
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext dbContext)
         {
             if (env.IsDevelopment())
             {
@@ -40,6 +47,10 @@ namespace VertexMVC
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            Log.Information("Application start seeding");
+            Seeder.SeedData(dbContext).GetAwaiter().GetResult();
+            Log.Information("Application successful seeded");
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -52,6 +63,9 @@ namespace VertexMVC
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            Log.Information("Application successfull running");
+            
         }
     }
 }
