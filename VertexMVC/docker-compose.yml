@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vertexmvc:
+    image: ${DOCKER_REGISTRY-}vertexmvc
+    build:
+      context: .
+      dockerfile: VertexMVC/Dockerfile

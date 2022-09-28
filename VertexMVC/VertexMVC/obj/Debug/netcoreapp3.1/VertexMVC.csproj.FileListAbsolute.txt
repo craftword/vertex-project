@@ -1,6 +1,5 @@
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/data.json
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexMVC.deps.json
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexMVC.runtimeconfig.json
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexMVC.runtimeconfig.dev.json
