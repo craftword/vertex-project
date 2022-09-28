@@ -14,13 +14,15 @@ namespace VertexInfrastrature
         {
             var baseDir = Directory.GetCurrentDirectory();
 
-            await dbContext.Database.EnsureCreatedAsync();
+            var res = await dbContext.Database.EnsureCreatedAsync();
 
             if (!dbContext.Users.Any())
             {
                 var path = File.ReadAllText(FilePath(baseDir, "data.json"));
 
                 var users = JsonConvert.DeserializeObject<List<User>>(path);
+
+                await dbContext.AddRangeAsync(users);
                 
             }
 
