@@ -1,22 +1,15 @@
-﻿<Properties StartupConfiguration="{7E181D9B-1405-4A39-995F-C70D31646D67}|Default">
+﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
-    <Files>
-      <File FileName="VertexMVC/Program.cs" Line="17" Column="10" />
-      <File FileName="VertexMVC/Startup.cs" Line="52" Column="1" />
-      <File FileName="VertexMVC/appsettings.json" Line="15" Column="1" />
-      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" />
-      <File FileName="VertexMVC/Dockerfile" Line="1" Column="1" />
-      <File FileName="docker-compose.yml" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" selected="True" />
+            <Node name="docker-compose" expanded="True" />
+            <Node name="VertexMVC" expanded="True">
+              <Node name="Extensions" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="VertexMVC" expanded="True" />
           </Node>
         </State>
       </Pad>
