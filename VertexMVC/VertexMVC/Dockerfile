@@ -21,3 +21,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "VertexMVC.dll"]
+#CMD ASPNETCORE_URLS=http://*:$PORT dotnet VertexMVC.dll
