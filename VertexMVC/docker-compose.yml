@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  vertexmvc:
+    image: ${DOCKER_REGISTRY-}vertexmvc
+    build:
+      context: .
+      dockerfile: VertexMVC/Dockerfile
+    ports:
+      - 5154:80
+    depends_on:
+      - test-db
+    environment:
+      - CONNECTIONSTRINGS__DEFAULT=User ID=postgres;Password=Godword@20;Host=test-db;Port=5432;Database=VertexDb
+    networks:
+      - test-network
+
+  test-db:
+    image: postgres
+    # explicit container name
+    # another approach using hostname: https://stackoverflow.com/questions/68701716/docker-compose-postgres-connection-refused
+    container_name: test-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Godword@20
+      - POSTGRES_DB=VertexDb
+    ports:
+      - 5433:5432
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge
