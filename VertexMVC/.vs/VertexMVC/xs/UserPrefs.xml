@@ -1,26 +1,26 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Models/User.cs">
     <Files>
-      <File FileName="VertexMVC/Dockerfile" Line="26" Column="1" />
-      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="1" Column="1" />
-      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="25" Column="1" />
-      <File FileName="VertexCore/Interfaces/IUserRepository.cs" Line="14" Column="2" />
-      <File FileName="VertexInfrastrature/DbContext.cs" Line="7" Column="30" />
-      <File FileName="VertexMVC/Startup.cs" Line="1" Column="1" />
+      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="10" Column="2" />
+      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="11" Column="50" />
+      <File FileName="VertexMVC/Startup.cs" Line="38" Column="67" />
+      <File FileName="VertexCore/Interfaces/IUserService.cs" Line="9" Column="1" />
+      <File FileName="VertexCore/ViewModels/RegisterViewModel.cs" Line="6" Column="9" />
+      <File FileName="VertexCore/Models/User.cs" Line="16" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True">
-              <Node name="Interfaces" expanded="True" />
-            </Node>
-            <Node name="VertexInfrastrature" expanded="True">
-              <Node name="Repository" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
             </Node>
             <Node name="VertexMVC" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Extensions" expanded="True" />
             </Node>
           </Node>
         </State>
