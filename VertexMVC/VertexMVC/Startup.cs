@@ -10,7 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Core;
+using VertexCore.Interfaces;
 using VertexInfrastrature;
+using VertexInfrastrature.Repository;
 using VertexMVC.Extensions;
 
 namespace VertexMVC
@@ -32,7 +34,8 @@ namespace VertexMVC
             services.AddDbContextAndConfigurations(Environment, Configuration);
             services.AddControllersWithViews();
 
-            // Serilog with DataDog
+            // Register Services
+            services.AddScoped<IUserRepository, UserRepository>();
            
         }
 
