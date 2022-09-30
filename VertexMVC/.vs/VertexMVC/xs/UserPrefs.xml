@@ -1,22 +1,31 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Interfaces/IUserService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexInfrastrature/Seeder.cs">
     <Files>
       <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="10" Column="2" />
-      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" />
-      <File FileName="VertexMVC/Startup.cs" />
-      <File FileName="VertexCore/Interfaces/IUserService.cs" Line="7" Column="10" />
-      <File FileName="VertexCore/ViewModels/RegisterViewModel.cs" />
-      <File FileName="VertexCore/Models/User.cs" />
+      <File FileName="VertexMVC/Startup.cs" Line="49" Column="17" />
+      <File FileName="VertexCore/Interfaces/IUserService.cs" Line="7" Column="34" />
+      <File FileName="VertexCore/ViewModels/RegisterViewModel.cs" Line="6" Column="35" />
+      <File FileName="VertexCore/Models/User.cs" Line="14" Column="41" />
+      <File FileName="VertexCore/Services/UserService.cs" Line="28" Column="43" />
+      <File FileName="VertexCore/Interfaces/IUserRepository.cs" Line="8" Column="37" />
+      <File FileName="VertexInfrastrature/Seeder.cs" Line="15" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True">
-              <Node name="Interfaces" expanded="True">
-                <Node name="IUserService.cs" selected="True" />
-              </Node>
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="VertexInfrastrature" expanded="True">
+              <Node name="Repository" expanded="True" />
+              <Node name="Seeder.cs" selected="True" />
+            </Node>
+            <Node name="VertexMVC" expanded="True">
+              <Node name="Extensions" expanded="True" />
             </Node>
           </Node>
         </State>
