@@ -1,26 +1,22 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Models/User.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Interfaces/IUserService.cs">
     <Files>
       <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="10" Column="2" />
-      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="11" Column="50" />
-      <File FileName="VertexMVC/Startup.cs" Line="38" Column="67" />
-      <File FileName="VertexCore/Interfaces/IUserService.cs" Line="9" Column="1" />
-      <File FileName="VertexCore/ViewModels/RegisterViewModel.cs" Line="6" Column="9" />
-      <File FileName="VertexCore/Models/User.cs" Line="16" Column="42" />
+      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" />
+      <File FileName="VertexMVC/Startup.cs" />
+      <File FileName="VertexCore/Interfaces/IUserService.cs" Line="7" Column="10" />
+      <File FileName="VertexCore/ViewModels/RegisterViewModel.cs" />
+      <File FileName="VertexCore/Models/User.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="User.cs" selected="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="IUserService.cs" selected="True" />
               </Node>
-              <Node name="ViewModels" expanded="True" />
-            </Node>
-            <Node name="VertexMVC" expanded="True">
-              <Node name="Extensions" expanded="True" />
             </Node>
           </Node>
         </State>
