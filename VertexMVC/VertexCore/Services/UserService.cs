@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using AutoMapper;
 using VertexCore.Interfaces;
 using VertexCore.Models;
 using VertexCore.ViewModels;
@@ -9,17 +10,21 @@ namespace VertexCore.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly IMapper _mapper;
+        public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
-        public Task<UserViewModel> GetAUserAsync(string Id)
+        public async Task<UserViewModel> GetAUserAsync(string Id)
         {
-            throw new NotImplementedException();
+            var user = await _userRepository.GetAUserAsync(Id);
+
+            return _mapper.Map<UserViewModel>(user);
         }
 
-        public async Task<bool> RegisterAsync(RegisterViewModel model)
+        public async Task<string> RegisterAsync(RegisterViewModel model)
         {
             User user = new User()
             {
@@ -37,10 +42,10 @@ namespace VertexCore.Services
             };
             var result = await _userRepository.AddUserAsync(user);
 
+            if(result)
+                return user.Id;
 
-            return result;
-
-            
+            return null;
         }
     }
 }

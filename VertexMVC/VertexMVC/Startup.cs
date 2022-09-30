@@ -11,9 +11,12 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Core;
 using VertexCore.Interfaces;
+using VertexCore.Utilities;
 using VertexInfrastrature;
 using VertexInfrastrature.Repository;
 using VertexMVC.Extensions;
+using AutoMapper;
+using VertexCore.Services;
 
 namespace VertexMVC
 {
@@ -36,7 +39,11 @@ namespace VertexMVC
 
             // Register Services
             services.AddScoped<IUserRepository, UserRepository>();
-           
+            services.AddScoped<IUserService, UserService>();
+
+            //AutoMapper
+            services.AddAutoMapper(typeof(MapInitializer));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

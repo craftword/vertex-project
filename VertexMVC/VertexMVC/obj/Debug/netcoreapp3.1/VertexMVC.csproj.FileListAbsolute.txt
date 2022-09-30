@@ -8,6 +8,7 @@
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexMVC.Views.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexMVC.Views.pdb
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
@@ -44,6 +45,7 @@
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/Serilog.Sinks.PostgreSQL.Configuration.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexCore.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexInfrastrature.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexInfrastrature.pdb

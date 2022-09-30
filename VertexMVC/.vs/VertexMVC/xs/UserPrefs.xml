@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexInfrastrature/Seeder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Controllers/HomeController.cs">
     <Files>
-      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="10" Column="2" />
-      <File FileName="VertexMVC/Startup.cs" Line="49" Column="17" />
-      <File FileName="VertexCore/Interfaces/IUserService.cs" Line="7" Column="34" />
-      <File FileName="VertexCore/ViewModels/RegisterViewModel.cs" Line="6" Column="35" />
-      <File FileName="VertexCore/Models/User.cs" Line="14" Column="41" />
-      <File FileName="VertexCore/Services/UserService.cs" Line="28" Column="43" />
-      <File FileName="VertexCore/Interfaces/IUserRepository.cs" Line="8" Column="37" />
-      <File FileName="VertexInfrastrature/Seeder.cs" Line="15" Column="27" />
+      <File FileName="VertexMVC/Startup.cs" Line="44" Column="25" />
+      <File FileName="VertexCore/Services/UserService.cs" Line="10" Column="37" />
+      <File FileName="VertexInfrastrature/Seeder.cs" Line="9" Column="30" />
+      <File FileName="VertexMVC/Controllers/HomeController.cs" Line="43" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,13 +15,13 @@
               <Node name="Interfaces" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="Utilities" expanded="True" />
             </Node>
-            <Node name="VertexInfrastrature" expanded="True">
-              <Node name="Repository" expanded="True" />
-              <Node name="Seeder.cs" selected="True" />
-            </Node>
+            <Node name="VertexInfrastrature" expanded="True" />
             <Node name="VertexMVC" expanded="True">
-              <Node name="Extensions" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

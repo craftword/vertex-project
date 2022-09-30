@@ -17,6 +17,8 @@
     <None Remove="Serilog.Sinks.Datadog.Logs" />
     <None Remove="Serilog.Sinks.PostgreSQL" />
     <None Remove="Serilog.Sinks.PostgreSQL.Configuration" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
@@ -29,6 +31,7 @@
     <PackageReference Include="Serilog.AspNetCore" Version="3.1.0" />
     <PackageReference Include="Serilog.Sinks.PostgreSQL" Version="2.3.0" />
     <PackageReference Include="Serilog.Sinks.PostgreSQL.Configuration" Version="1.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="data.json" />
