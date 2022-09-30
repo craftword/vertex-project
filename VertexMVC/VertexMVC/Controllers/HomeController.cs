@@ -28,17 +28,22 @@ namespace VertexMVC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var result = await _userService.RegisterAsync(model);
 
                 if (result != null)
-                    return RedirectToAction("Details", result);
+                    return RedirectToAction("Details", new { Id = result });
+
+                ModelState.AddModelError("error", "Email Already Exists.");
+                return View(model);
+
             }
 
-            return View();
+            return View(model);
         }
 
         [HttpGet]

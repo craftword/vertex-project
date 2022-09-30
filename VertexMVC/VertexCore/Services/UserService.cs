@@ -26,24 +26,31 @@ namespace VertexCore.Services
 
         public async Task<string> RegisterAsync(RegisterViewModel model)
         {
-            User user = new User()
+            var checkUser = await _userRepository.GetAUserByEmailAsync(model.Email);
+
+            if(checkUser == null)
             {
-                Id = Guid.NewGuid().ToString(),
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                MiddleName = model.MiddleName,
-                Email = model.Email,
-                Address = model.Address,
-                Phone = model.Phone,
-                City = model.City,
-                CreatedAt = DateTime.Now,
-                ModifiedAt = DateTime.Now
+                User user = new User()
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    MiddleName = model.MiddleName,
+                    Email = model.Email,
+                    Address = model.Address,
+                    Phone = model.Phone,
+                    City = model.City,
+                    Zip = model.Zip,
+                    CreatedAt = DateTime.Now,
+                    ModifiedAt = DateTime.Now
 
-            };
-            var result = await _userRepository.AddUserAsync(user);
+                };
+                var result = await _userRepository.AddUserAsync(user);
 
-            if(result)
-                return user.Id;
+                if (result)
+                    return user.Id;
+            }
+            
 
             return null;
         }
