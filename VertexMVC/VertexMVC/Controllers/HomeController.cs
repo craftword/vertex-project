@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using VertexCore.Interfaces;
 using VertexCore.ViewModels;
-using VertexMVC.Models;
+
 
 namespace VertexMVC.Controllers
 {
@@ -45,7 +45,8 @@ namespace VertexMVC.Controllers
         public async Task<IActionResult> Details(string Id)
         {
             var user = await _userService.GetAUserAsync(Id);
-            return View();
+
+            return View(user);
         }
 
         

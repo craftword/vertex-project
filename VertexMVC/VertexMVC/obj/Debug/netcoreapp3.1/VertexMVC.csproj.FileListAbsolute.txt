@@ -62,9 +62,8 @@
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.TagHelpers.input.cache
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.TagHelpers.output.cache
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.RazorCoreGenerate.cache
+/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Details.cshtml.g.cs
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
-/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
-/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs

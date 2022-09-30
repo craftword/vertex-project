@@ -12,7 +12,7 @@ namespace VertexCore.ViewModels
        
         public string MiddleName { get; set; }
 
-        [Required(ErrorMessage = "FirstName is Required")]
+        [Required(ErrorMessage = "Email is Required")]
         [EmailAddress(ErrorMessage = "Please enter the right format like xyz@gmail.com")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Address is Required")]
