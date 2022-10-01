@@ -13,12 +13,11 @@ namespace VertexMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        
         private readonly IUserService _userService;
 
-        public HomeController(ILogger<HomeController> logger, IUserService userService)
+        public HomeController(IUserService userService)
         {
-            _logger = logger;
             _userService = userService;
         }
 
@@ -36,13 +35,18 @@ namespace VertexMVC.Controllers
                 var result = await _userService.RegisterAsync(model);
 
                 if (result != null)
+                {
                     return RedirectToAction("Details", new { Id = result });
-
-                ModelState.AddModelError("error", "Email Already Exists.");
-                return View(model);
+                }
+                else
+                {
+                    ModelState.AddModelError("error", "Email Already Exists.");
+                    return View(model);
+                }   
 
             }
 
+            ModelState.AddModelError("error", "Make sure your enter all required fields");
             return View(model);
         }
 
@@ -50,8 +54,11 @@ namespace VertexMVC.Controllers
         public async Task<IActionResult> Details(string Id)
         {
             var user = await _userService.GetAUserAsync(Id);
+            if(user != null)
+                return View(user);
 
-            return View(user);
+            ModelState.AddModelError("error", "User does not Exists.");
+            return View();
         }
 
         

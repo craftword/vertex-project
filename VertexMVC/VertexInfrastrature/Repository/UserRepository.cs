@@ -39,13 +39,13 @@ namespace VertexInfrastrature.Repository
             return user;
         }
 
-        public async Task<User> GetAUserByEmailAsync(string email)
+        public async Task<bool> GetAUserByEmailAsync(string email)
         {
             var user = await _context.Users
                         .Where(x => x.Email == email)
                         .FirstOrDefaultAsync();
 
-            return user;
+            return user == null;
         }
 
         private async Task<bool> SaveAsync()

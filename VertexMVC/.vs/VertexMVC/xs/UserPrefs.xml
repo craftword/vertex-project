@@ -1,39 +1,31 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Services/UserService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Interfaces/IUserRepository.cs">
     <Files>
-      <File FileName="VertexMVC/Startup.cs" Line="44" Column="25" />
-      <File FileName="VertexCore/Services/UserService.cs" Line="29" Column="32" />
-      <File FileName="VertexInfrastrature/Seeder.cs" Line="9" Column="30" />
-      <File FileName="VertexMVC/Controllers/HomeController.cs" Line="31" Column="35" />
-      <File FileName="VertexMVC/Views/Home/Index.cshtml" Line="7" Column="1" />
-      <File FileName="VertexMVC/Views/Home/Details.cshtml" Line="30" Column="7" />
-      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="24" Column="10" />
+      <File FileName="VertexTest/UnitTest1.cs" Line="72" Column="15" />
+      <File FileName="VertexTest/Helper.cs" Line="15" Column="37" />
+      <File FileName="VertexCore/Services/UserService.cs" Line="35" Column="52" />
+      <File FileName="VertexTest/UserServiceTest.cs" Line="80" Column="1" />
+      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="11" Column="43" />
+      <File FileName="VertexCore/Interfaces/IUserRepository.cs" Line="13" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True">
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="UserService.cs" selected="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="IUserRepository.cs" selected="True" />
               </Node>
-              <Node name="ViewModels" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
             <Node name="VertexInfrastrature" expanded="True">
               <Node name="Repository" expanded="True" />
             </Node>
             <Node name="VertexMVC" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
             </Node>
+            <Node name="VertexTest" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -48,7 +40,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VertexMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mac/Projects/vertex-project/VertexMVC/VertexTest/CreateControllerTest.cs" relfile="VertexTest/CreateControllerTest.cs" line="114" column="1" />
+      <Breakpoint file="/Users/mac/Projects/vertex-project/VertexMVC/VertexTest/CreateControllerTest.cs" relfile="VertexTest/CreateControllerTest.cs" line="131" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

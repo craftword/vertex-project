@@ -28,7 +28,7 @@ namespace VertexCore.Services
         {
             var checkUser = await _userRepository.GetAUserByEmailAsync(model.Email);
 
-            if(checkUser == null)
+            if(checkUser)
             {
                 User user = new User()
                 {
