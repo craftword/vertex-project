@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexCore/Interfaces/IUserRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexTest/UserRepositoryTest.cs">
     <Files>
       <File FileName="VertexTest/UnitTest1.cs" Line="72" Column="15" />
-      <File FileName="VertexTest/Helper.cs" Line="15" Column="37" />
-      <File FileName="VertexCore/Services/UserService.cs" Line="35" Column="52" />
-      <File FileName="VertexTest/UserServiceTest.cs" Line="80" Column="1" />
-      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="11" Column="43" />
-      <File FileName="VertexCore/Interfaces/IUserRepository.cs" Line="13" Column="14" />
+      <File FileName="VertexTest/Helper.cs" Line="101" Column="1" />
+      <File FileName="VertexCore/Services/UserService.cs" Line="14" Column="75" />
+      <File FileName="VertexTest/UserServiceTest.cs" Line="23" Column="10" />
+      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="27" Column="10" />
+      <File FileName="VertexTest/UserRepositoryTest.cs" Line="36" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True">
-              <Node name="Interfaces" expanded="True">
-                <Node name="IUserRepository.cs" selected="True" />
-              </Node>
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="VertexInfrastrature" expanded="True">
@@ -25,7 +24,9 @@
             <Node name="VertexMVC" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="VertexTest" expanded="True" />
+            <Node name="VertexTest" expanded="True">
+              <Node name="UserRepositoryTest.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
