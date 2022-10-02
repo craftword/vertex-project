@@ -64,6 +64,7 @@ namespace VertexMVC
                     webBuilder
                     .UseSerilog()
                     .UseStartup<Startup>();
+                    webBuilder.UseUrls("http://*:" + Environment.GetEnvironmentVariable("PORT"));
                 });
     }
 }
