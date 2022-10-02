@@ -10,17 +10,15 @@ using Xunit;
 
 namespace VertexTest
 {
-    public class UserRepositoryTest
-    {
+    public class UserRepositoryTest : InMemoryTestBase
+    {   
+        private UserRepository _repo;
 
-        private readonly Mock<AppDbContext> _mockDbContext;
-        private readonly UserRepository repo;
-        
-        public UserRepositoryTest()
+        protected override void Reset()
         {
-            _mockDbContext = new Mock<AppDbContext>();
-            repo = new UserRepository(_mockDbContext.Object);
+            _repo = new UserRepository(DbContext);
         }
+
 
         [Fact]
         public void AddUserAsyncShouldReturnBool()
@@ -40,24 +38,23 @@ namespace VertexTest
                 ModifiedAt = DateTime.Now
             };
             
-            
-
-            var actual = repo.AddUserAsync(user);
+            var actual = _repo.AddUserAsync(user);
             var result = actual.Result;
 
             Assert.True(result);
 
         }
 
+
+
         [Fact]
         public void GetAllUserAsyncShouldReturnListOfUsers()
-        {
-            _mockDbContext.Setup(x => x.Users).ReturnsDbSet(Helper.GetAllUsers());
-            var actual = repo.GetAllUsersAsync();
+        { 
+            var actual = _repo.GetAllUsersAsync();
             var result = actual.Result;
 
             Assert.IsType<List<User>>(result);
-            Assert.Equal(Helper.GetAllUsers(), result);
+            Assert.Equal(Helper.GetAllUsers().Count, result.Count());
         }
 
 
@@ -66,21 +63,20 @@ namespace VertexTest
         {
             var Id = "2ccd5586-51f2-444c-aa63-e13012748dfa";
             var user = Helper.GetUser(Id);
-            _mockDbContext.Setup(x => x.Users.Where(x => x.Id == Id).SingleOrDefault()).Returns(user);
-            var actual = repo.GetAUserAsync(Id);
+            var actual = _repo.GetAUserAsync(Id);
             var result = actual.Result;
 
             Assert.IsType<User>(result);
-            Assert.Equal(user, result);
+            Assert.Equal(user.Id, result.Id);
+            Assert.Equal(user.FirstName, result.FirstName);
+            Assert.Equal(user.Email, result.Email);
         }
 
         [Fact]
         public void GetAUserAsyncByEmailShouldReturnAUser()
         {
             var email = "hvandijk0@umn.edu";
-            var user = Helper.GetUserByEmail(email);
-            _mockDbContext.Setup(x => x.Users.Where(x => x.Email == email).SingleOrDefault()).Returns(user);
-            var actual = repo.GetAUserByEmailAsync(email);
+            var actual = _repo.GetAUserByEmailAsync(email);
             var result = actual.Result;
 
             Assert.IsType<bool>(result);

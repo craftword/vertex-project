@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexTest/UserRepositoryTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexTest/UserServiceTest.cs">
     <Files>
       <File FileName="VertexTest/UnitTest1.cs" Line="72" Column="15" />
-      <File FileName="VertexTest/Helper.cs" Line="101" Column="1" />
-      <File FileName="VertexCore/Services/UserService.cs" Line="14" Column="75" />
+      <File FileName="VertexCore/Services/UserService.cs" Line="38" Column="51" />
       <File FileName="VertexTest/UserServiceTest.cs" Line="23" Column="10" />
-      <File FileName="VertexInfrastrature/Repository/UserRepository.cs" Line="27" Column="10" />
-      <File FileName="VertexTest/UserRepositoryTest.cs" Line="36" Column="32" />
+      <File FileName="VertexTest/UserRepositoryTest.cs" Line="52" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +23,7 @@
               <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="VertexTest" expanded="True">
-              <Node name="UserRepositoryTest.cs" selected="True" />
+              <Node name="UserServiceTest.cs" selected="True" />
             </Node>
           </Node>
         </State>

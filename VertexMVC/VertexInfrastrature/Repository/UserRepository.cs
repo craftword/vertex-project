@@ -45,7 +45,7 @@ namespace VertexInfrastrature.Repository
                         .Where(x => x.Email == email)
                         .FirstOrDefaultAsync();
 
-            return user == null;
+            return user != null;
         }
 
         private async Task<bool> SaveAsync()
