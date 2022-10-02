@@ -1,29 +1,19 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexTest/UserServiceTest.cs">
-    <Files>
-      <File FileName="VertexTest/UnitTest1.cs" Line="72" Column="15" />
-      <File FileName="VertexCore/Services/UserService.cs" Line="38" Column="51" />
-      <File FileName="VertexTest/UserServiceTest.cs" Line="23" Column="10" />
-      <File FileName="VertexTest/UserRepositoryTest.cs" Line="52" Column="11" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True">
-              <Node name="Interfaces" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
             </Node>
-            <Node name="VertexInfrastrature" expanded="True">
-              <Node name="Repository" expanded="True" />
-            </Node>
-            <Node name="VertexMVC" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
+            <Node name="VertexInfrastrature" expanded="True" />
+            <Node name="VertexMVC" expanded="True" />
             <Node name="VertexTest" expanded="True">
-              <Node name="UserServiceTest.cs" selected="True" />
+              <Node name="CreateControllerTest.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -39,10 +29,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VertexMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mac/Projects/vertex-project/VertexMVC/VertexTest/CreateControllerTest.cs" relfile="VertexTest/CreateControllerTest.cs" line="114" column="1" />
-      <Breakpoint file="/Users/mac/Projects/vertex-project/VertexMVC/VertexTest/CreateControllerTest.cs" relfile="VertexTest/CreateControllerTest.cs" line="131" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

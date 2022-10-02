@@ -60,22 +60,7 @@ namespace VertexTest
         public void RegisterAsyncShouldReturnAStringWhenEmailDoesNotExist()
         {
 
-            var user = new User
-            {
-                Id = Guid.NewGuid().ToString(),
-                FirstName = "Beth",
-                LastName = "Meachen",
-                Email = "dmeachen3@4shared.com",
-                Address = "7 Nobel Ave",
-                City = "Arepo",
-                Phone = "08027313450",
-                Zip = "100234",
-                MiddleName = "Dorene",
-                CreatedAt = DateTime.Now,
-                ModifiedAt = DateTime.Now
-            };
-
-            RegisterViewModel user1 = new RegisterViewModel()
+            RegisterViewModel user = new RegisterViewModel()
             {
                 FirstName = "Beth",
                 LastName = "Meachen",
@@ -86,13 +71,11 @@ namespace VertexTest
                 Zip = "100234",
                 MiddleName = "Dorene",
             };
-            _mockRepo.Setup(x => x.GetAUserByEmailAsync(user.Email)).ReturnsAsync(true);
-            _mockRepo.Setup(x => x.AddUserAsync(user)).ReturnsAsync(true);
+            _mockRepo.Setup(x => x.GetAUserByEmailAsync(user.Email)).ReturnsAsync(false);
+            _mockRepo.Setup(x => x.AddUserAsync(It.IsAny<User>())).ReturnsAsync(true);
 
-            var userModel = service.RegisterAsync(user1);
+            var userModel = service.RegisterAsync(user);
             
-
-            Assert.Equal(user.Id, userModel.Result);
             Assert.IsType<string>(userModel.Result);
 
         }
@@ -103,7 +86,7 @@ namespace VertexTest
         public void RegisterAsyncShouldReturnNullWhenEmailDoesExist()
         {
 
-            RegisterViewModel user1 = new RegisterViewModel()
+            RegisterViewModel user = new RegisterViewModel()
             {
                 FirstName = "Beth",
                 LastName = "Meachen",
@@ -114,10 +97,10 @@ namespace VertexTest
                 Zip = "100234",
                 MiddleName = "Dorene",
             };
-            _mockRepo.Setup(x => x.GetAUserByEmailAsync(user1.Email)).ReturnsAsync(false);
+            _mockRepo.Setup(x => x.GetAUserByEmailAsync(user.Email)).ReturnsAsync(false);
             
 
-            var userModel = service.RegisterAsync(user1);
+            var userModel = service.RegisterAsync(user);
 
             Assert.Null(userModel.Result);
 

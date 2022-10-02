@@ -59,6 +59,8 @@ namespace VertexTest
         [Fact]
         public async Task IndexPostShouldReturnRedirectToActionDetailsIfModelIsValid()
         {
+           
+
             var user = new RegisterViewModel
             {
                 FirstName = "Beth",
@@ -71,13 +73,15 @@ namespace VertexTest
                 MiddleName = "Dorene"
             };
 
+
+            _mockRepo.Setup(x => x.RegisterAsync(user)).ReturnsAsync("3fcff486-718b-4050-bd19-c3115e25d0e7");
+
             var result = await _controller.Index(user);
 
             var redirectResult = Assert.IsType<RedirectToActionResult>(result);
-            //Assert.IsAssignableFrom<RedirectToActionResult>(result);
-            //var redirectToAction = (RedirectToActionResult)result; 
-            //Assert.Equal("Details", redirectResult.ActionName);
-            //Assert.Equal(nameof(HomeController.Index), redirectResult.ActionName);
+            
+            Assert.Equal("Details", redirectResult.ActionName);
+           
         }
 
         
@@ -131,9 +135,8 @@ namespace VertexTest
             var result = await _controller.Details("2ccd5586-51f2-444c-aa63-e13012748dfa");
 
             var viewResult = Assert.IsType<ViewResult>(result);
-            var actual = Assert.IsType<UserViewModel>(viewResult.Model);
-
-            Assert.Null(actual);
+           
+            Assert.Null(viewResult.Model);
         }
     }
 }

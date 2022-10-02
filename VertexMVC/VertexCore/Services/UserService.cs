@@ -48,7 +48,14 @@ namespace VertexCore.Services
                 var result = await _userRepository.AddUserAsync(user);
 
                 if (result)
+                {
                     return user.Id;
+                }
+                else
+                {
+                    return null;
+                }
+                   
             }
             
 

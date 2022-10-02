@@ -33,7 +33,7 @@ namespace VertexTest
                 UserViewModel result = new UserViewModel()
                 {
                     Id = user.Id,
-                    FirstName = user.Id,
+                    FirstName = user.FirstName,
                     LastName = user.LastName,
                     Email = user.Email,
                     Address = user.Address,
