@@ -10,5 +10,6 @@ namespace VertexCore.Interfaces
         Task<bool> AddUserAsync(User model);
         Task<IEnumerable<User>> GetAllUsersAsync();
         Task<User> GetAUserAsync(string Id);
+        Task<bool> GetAUserByEmailAsync(string email);
     }
 }

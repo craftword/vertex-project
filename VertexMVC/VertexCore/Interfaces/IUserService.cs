@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Threading.Tasks;
+using VertexCore.ViewModels;
+
 namespace VertexCore.Interfaces
 {
-    public class IUserService
+    public interface IUserService
     {
-        public IUserService()
-        {
-        }
+        Task<string> RegisterAsync(RegisterViewModel model);
+        Task<UserViewModel> GetAUserAsync(string Id);
     }
 }
