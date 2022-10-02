@@ -3,15 +3,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Program.cs">
     <Files>
       <File FileName="VertexMVC/Dockerfile" Line="23" Column="35" />
-      <File FileName="VertexMVC/Program.cs" Line="1" Column="1" />
+      <File FileName="VertexMVC/Program.cs" Line="40" Column="10" />
+      <File FileName="VertexInfrastrature/Seeder.cs" Line="25" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
             <Node name="VertexCore" expanded="True" />
+            <Node name="VertexInfrastrature" expanded="True" />
             <Node name="VertexMVC" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="data.json" selected="True" />
             </Node>
           </Node>
         </State>

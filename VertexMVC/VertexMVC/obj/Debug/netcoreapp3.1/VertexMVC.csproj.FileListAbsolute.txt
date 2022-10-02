@@ -50,7 +50,6 @@
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexInfrastrature.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexInfrastrature.pdb
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/bin/Debug/netcoreapp3.1/VertexCore.pdb
-/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.csproj.AssemblyReference.cache
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.GeneratedMSBuildEditorConfig.editorconfig
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.AssemblyInfoInputs.cache
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.AssemblyInfo.cs
@@ -75,3 +74,4 @@
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.dll
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.pdb
 /Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.genruntimeconfig.cache
+/Users/mac/Projects/vertex-project/VertexMVC/VertexMVC/obj/Debug/netcoreapp3.1/VertexMVC.csproj.AssemblyReference.cache
