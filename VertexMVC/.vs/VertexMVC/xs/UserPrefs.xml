@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Extensions/ConnectionConfiguration.cs">
-    <Files>
-      <File FileName="VertexMVC/Dockerfile" Line="25" Column="1" />
-      <File FileName="VertexMVC/Extensions/ConnectionConfiguration.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
-            <Node name="VertexMVC" expanded="True">
-              <Node name="Extensions" expanded="True">
-                <Node name="ConnectionConfiguration.cs" selected="True" />
-              </Node>
+            <Node name="VertexCore" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+            <Node name="VertexInfrastrature" expanded="True" />
+            <Node name="VertexMVC" expanded="True" />
+            <Node name="VertexTest" expanded="True">
+              <Node name="CreateControllerTest.cs" selected="True" />
             </Node>
           </Node>
         </State>

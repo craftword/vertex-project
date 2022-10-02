@@ -1,0 +1,30 @@
+﻿
+@model UserViewModel
+
+@{
+    ViewData["Title"] = "Details Page";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card my-5 p-5">
+                <p>
+                    <h4><strong>First Name: </strong> @Model.FirstName</h4>
+                </p>
+                <p>
+                    <h4><strong>Last Name: </strong> @Model.LastName</h4>
+                </p>
+                @if (Model.MiddleName != null)
+                {
+                    <p>
+                        <h4><strong>Middle Name: </strong> @Model.MiddleName</h4>
+                    </p>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>

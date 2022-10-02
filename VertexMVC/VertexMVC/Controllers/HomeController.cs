@@ -5,17 +5,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using VertexMVC.Models;
+using VertexCore.Interfaces;
+using VertexCore.ViewModels;
+
 
 namespace VertexMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        
+        private readonly IUserService _userService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IUserService userService)
         {
-            _logger = logger;
+            _userService = userService;
         }
 
         public IActionResult Index()
@@ -23,15 +26,41 @@ namespace VertexMVC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(RegisterViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+                var result = await _userService.RegisterAsync(model);
+
+                if (result != null)
+                {
+                    return RedirectToAction("Details", new { Id = result });
+                }
+                else
+                {
+                    ModelState.AddModelError("error", "Email Already Exists.");
+                    return View(model);
+                }   
+
+            }
+
+            ModelState.AddModelError("error", "Make sure your enter all required fields");
+            return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(string Id)
+        {
+            var user = await _userService.GetAUserAsync(Id);
+            if(user != null)
+                return View(user);
+
+            ModelState.AddModelError("error", "User does not Exists.");
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }
