@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{C9047BE2-E255-46A3-904D-32F975A5D29D}|Default">
   <MonoDevelop.Ide.ItemProperties.VertexTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="VertexMVC/Program.cs">
+    <Files>
+      <File FileName="VertexMVC/Dockerfile" Line="23" Column="35" />
+      <File FileName="VertexMVC/Program.cs" Line="40" Column="10" />
+      <File FileName="VertexInfrastrature/Seeder.cs" Line="25" Column="54" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VertexMVC" expanded="True">
-            <Node name="VertexCore" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-            </Node>
+            <Node name="VertexCore" expanded="True" />
             <Node name="VertexInfrastrature" expanded="True" />
-            <Node name="VertexMVC" expanded="True" />
-            <Node name="VertexTest" expanded="True">
-              <Node name="CreateControllerTest.cs" selected="True" />
+            <Node name="VertexMVC" expanded="True">
+              <Node name="data.json" selected="True" />
             </Node>
           </Node>
         </State>
